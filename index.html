@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Drag & Drop</title>
+  </head>
+  <body>
+    <section class="input__sec">
+      <h2 class="body__title">Drag & Drop in Typescript OOP</h2>
+      <div class="input__section">
+        <input type="text" placeholder="Enter Project Name" />
+        <select name="state" id="state">
+          <option value="true">Active</option>
+          <option value="false">Inctive</option>
+        </select>
+      </div>
+      <div class="buttons">
+        <input type="button" value="Submit" id="btn" data-attr="submit" />
+        <button type="button" id="cancel__btn">Cancel</button>
+      </div>
+    </section>
+
+    <section class="list__sec">
+      <div class="list__section active-list-section">
+        <h2>Active Projects</h2>
+        <ul class="ul active-list"></ul>
+      </div>
+      <div class="list__section inactive-list-section">
+        <h2>Inactive Projects</h2>
+        <ul class="ul inactive-list"></ul>
+      </div>
+    </section>
+    <script type="module" src="./dist/app.js"></script>
+  </body>
+</html>
